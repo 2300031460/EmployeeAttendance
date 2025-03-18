@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Assignments</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      color: #333;
+      font-size: 2rem;
+    }
+
+    .assignments {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    .assignment-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .assignment-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .assignment-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .assignment-card h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .assignment-card p {
+      color: #555;
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    .assignment-card button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .assignment-card button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Employee Assignments</h1>
+      <p>Below are the current assignments for our employees:</p>
+    </div>
+
+    <!-- Assignments Section -->
+    <div class="assignments">
+      <!-- Assignment Card 1 -->
+      <div class="assignment-card">
+        <img src="developer.jpg" alt="UI Developer">
+        <h3>UI Developer - Sam David</h3>
+        <p><strong>Assignment:</strong> Develop the new user interface for the upcoming project.</p>
+        <p><strong>Deadline:</strong> 25th Nov 2024</p>
+        <button>View Details</button>
+      </div>
+
+      <!-- Assignment Card 2 -->
+      <div class="assignment-card">
+        <img src="programmer.jpg" alt="Programmer">
+        <h3>Programmer - Balbina Kherr</h3>
+        <p><strong>Assignment:</strong> Implement core functionality of the backend API.</p>
+        <p><strong>Deadline:</strong> 30th Nov 2024</p>
+        <button>View Details</button>
+      </div>
+
+      <!-- Assignment Card 3 -->
+      <div class="assignment-card">
+        <img src="tester.jpg" alt="Tester">
+        <h3>Tester - Badan John</h3>
+        <p><strong>Assignment:</strong> Conduct thorough testing of the new app release.</p>
+        <p><strong>Deadline:</strong> 28th Nov 2024</p>
+        <button>View Details</button>
+      </div>
+
+      <!-- Assignment Card 4 -->
+      <div class="assignment-card">
+        <img src="designer.jpg" alt="UI Designer">
+        <h3>UI Designer - Salina Michael</h3>
+        <p><strong>Assignment:</strong> Design mockups for the new feature in the product.</p>
+        <p><strong>Deadline:</strong> 27th Nov 2024</p>
+        <button>View Details</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

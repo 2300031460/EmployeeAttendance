@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Attendance Form</title>
+</head>
+<body>
+<h3 align="center"><u>Employee Attendance</u></h3>
+<form align="center" method="post" action="displayAttendance">
+<b>Employee ID:</b> <input type="number" name="id" required/><br><br>
+<b>Employee Name:</b> <input type="text" name="name" required/><br><br>
+<b>Attendance Status:</b> 
+<input type="radio" name="attendance" value="Present" required/>Present
+<input type="radio" name="attendance" value="Absent" required/>Absent
+<input type="radio" name="attendance" value="On Leave" required/>On Leave
+<br><br>
+<input type="submit" name="submit" value="Submit"/>
+</form>
+</body>
+</html>
